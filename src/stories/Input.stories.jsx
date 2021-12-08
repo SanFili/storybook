@@ -1,24 +1,25 @@
 import React from 'react';
 
-import SearchField from '../Components/SearchField';
+import Input from '../Components/Input';
 
 export default {
-    title: 'Example/SearchField',
-    component: SearchField,
+    title: 'Example/Input',
+    component: Input,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
 };
   
-const Template = (args) => <SearchField {...args} />;
+const Template = (args) => <Input {...args} />;
 
+export const Disabled = Template.bind({});
+Disabled.args = {
+    active: false,
+};
+  
 export const Active = Template.bind({});
 Active.args = {
     active: true,
-};
-  
-export const Disabled = Template.bind({});
-Disabled.args = {
 };
   
 export const Large = Template.bind({});
