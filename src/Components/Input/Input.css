@@ -26,9 +26,9 @@
   }
 
   .input--disabled {
-    background: #dbdcdd;
+    background-color: #eaecee;
   }
 
   .input--active {
-    background: #FFF;
+    background-color: #FFF;
   }
