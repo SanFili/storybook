@@ -1,20 +1,21 @@
 import React from 'react';
 
-import Input from '../Components/Input';
+import Button from '../Components/Button';
 
 export default {
-    title: 'Example/Input',
-    component: Input,
+    title: 'Example/Button',
+    component: Button,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
 };
-  
-const Template = (args) => <Input {...args} />;
+
+const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
     size: 'medium',
     active: true,
-    placeholder: 'Введите запрос'
+    label: 'Клик',
+    onClick: () => {},
 };

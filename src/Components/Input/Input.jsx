@@ -23,10 +23,4 @@ Input.propTypes = {
     backgroundColor: PropTypes.string,
 }
 
-Input.defaultProps = {
-    active: true,
-    size: 'medium',
-    placeholder: 'Введите запрос',
-}
-
 export default Input
