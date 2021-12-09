@@ -11,7 +11,6 @@ const SearchField = ({
     backgroundColor,
     labelButton,
     placeholder,
-    handleClick
 }) => {
 
     return (
@@ -22,7 +21,6 @@ const SearchField = ({
                 active={activeButton}
                 style={backgroundColor && { backgroundColor }}
                 label={labelButton}
-                onClick={handleClick}
             />
             <Input
                 size={size}
@@ -43,7 +41,6 @@ SearchField.propTypes = {
     placeholder: PropTypes.string.isRequired,
     classInput: PropTypes.string,
     classButton: PropTypes.string,
-    onClick: PropTypes.func,
 }
 
 export default SearchField

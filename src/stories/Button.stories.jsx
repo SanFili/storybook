@@ -17,5 +17,4 @@ Default.args = {
     size: 'medium',
     active: true,
     label: 'Клик',
-    onClick: () => {},
 };

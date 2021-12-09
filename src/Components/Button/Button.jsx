@@ -9,7 +9,7 @@ const Button = ({ active, size, backgroundColor, label, classButton, ...props })
             disabled={!active}
             className={["button", mode, `button--${size}`, classButton].join(' ')}
             style={backgroundColor && { backgroundColor }}
-            {...props}
+            onClick={() => alert('click')}
             >
             { label }
         </button>
@@ -21,7 +21,6 @@ Button.propTypes = {
     size: PropTypes.oneOf(['small', 'medium', 'large']),
     label: PropTypes.string.isRequired,
     backgroundColor: PropTypes.string,
-    onClick: PropTypes.func,
     classButton: PropTypes.string,
 }
 
