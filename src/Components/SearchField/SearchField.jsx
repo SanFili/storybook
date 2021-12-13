@@ -39,8 +39,6 @@ SearchField.propTypes = {
     size: PropTypes.oneOf(['small', 'medium', 'large']),
     labelButton: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,
-    classInput: PropTypes.string,
-    classButton: PropTypes.string,
 }
 
 export default SearchField
